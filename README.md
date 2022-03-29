@@ -5,6 +5,8 @@ This is an implementation of Huffman Encoding written in Python 3 from scratch. 
 * [More on Canonical Huffman Encoding](https://en.wikipedia.org/wiki/Canonical_Huffman_code)
 * [More on Lookup Tables](https://en.wikipedia.org/wiki/Lookup_table)
 
+Note that the code also explains each step of the process.
+
 ## Usage
 * Compress: -c input file output binary file
 * Decompress: -d input file output text file
@@ -13,11 +15,12 @@ This is an implementation of Huffman Encoding written in Python 3 from scratch. 
 ## Performance
 The code was mainly tested on files from the [Cantebury Corpus](https://corpus.canterbury.ac.nz/descriptions/), specifically the original 1997 version and the Large Corpus.
 
-The bible provided in the Large Corpus is compressed in around 9 seconds from 3 953KB to 2 167KB and decompressed in around 15 seconds.
-Smaller files like Alice in Wonderland are compressed in around 0.1 seconds from 149KB to 83KB and decompressed in around 0.3 seconds.
+The bible provided in the Large Corpus is compressed from 3 953KB to 2 167KB.(On my machine compression takes 9 seconds, and decompression 15 seconds)
+Alice in Wonderland is compressed from from 149KB to 83KB.(On my machine compression takes 0.1 seconds, and decompression 0.3 seconds)
 
 
-
+## Other considerations
+Due to different newline endings on Linux(\n) and Windows(\r\n) decompressed files may be a different size to the original despite their content being identical.
 
 
 ### Example Usage
