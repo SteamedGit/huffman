@@ -15,8 +15,8 @@ Note that the code also explains each step of the process.
 ## Performance
 The code was mainly tested on files from the [Cantebury Corpus](https://corpus.canterbury.ac.nz/descriptions/), specifically the original 1997 version and the Large Corpus.
 
-The bible provided in the Large Corpus is compressed from 3 953KB to 2 167KB.(On my machine compression takes 9 seconds, and decompression 15 seconds)
-Alice in Wonderland is compressed from from 149KB to 83KB.(On my machine compression takes 0.1 seconds, and decompression 0.3 seconds)
+The bible provided in the Large Corpus is compressed from 3 953KB to 2 167KB.
+Alice in Wonderland is compressed from from 149KB to 83KB.
 
 
 ## Other considerations
